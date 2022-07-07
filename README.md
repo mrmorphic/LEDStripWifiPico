@@ -32,20 +32,20 @@ The HTTP parser only supports URL segments, but not query fields or fragments at
 allocate memory, and will truncate URL segments to a configurable fixed size so it can be run on an Arduino with very limited
 RAM (although the RPI has plenty)
 
-I could not get the Wifi / async server libraries to work on the Pico, which is why I wrote a simple parser directly. That is
-preferable if you can get it to work.
+I could not get the Wifi / async server libraries to work on the Pico, which is why I wrote a simple parser directly. Those
+libraries are preferable if you can get them to work.
 
 # Commands it understands
 
-This understands GET HTTP requests of the form:
-    `<ip-address>/<command>`
-    `<ip-address>/<command>/<param>`
+This understands GET HTTP requests of the forms:
+ *   `<ip-address>/<command>`
+ *`<ip-address>/<command>/<param>`
 
 Current commands are:
-    - `ambient` - cycles very slowly through a blue / green / red cycle
-    - `robot` - random flashing, mostly bright colours
-    - `cylon` - from battlestar galactica. but doesn't currently work properly.
-    - `colour/<colour>` (NZ english) - sets to a solid colour (colour parsing not implemented.)
+ *  `ambient` - cycles very slowly through a blue / green / red cycle
+ *  `robot` - random flashing, mostly bright colours
+ *  `cylon` - from battlestar galactica. but doesn't currently work properly.
+ *  `colour/<colour>` (NZ english) - sets to a solid colour (colour parsing not implemented.)
 
 # To do
 
