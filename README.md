@@ -38,8 +38,8 @@ libraries are preferable if you can get them to work.
 # Commands it understands
 
 This understands GET HTTP requests of the forms:
- *   `<ip-address>/<command>`
- *`<ip-address>/<command>/<param>`
+ *  `<ip-address>/<command>`
+ *  `<ip-address>/<command>/<param>`
 
 Current commands are:
  *  `ambient` - cycles very slowly through a blue / green / red cycle
